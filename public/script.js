@@ -6,7 +6,7 @@ let currentFilter = "all";
 async function loadTodos() {
     try {
 
-        const response = await fetch("/todos");
+        const response = await fetch("/api/todos");
 
         const data = await response.json();
 
@@ -84,7 +84,7 @@ addButton.addEventListener("click", async function () {
 
     try {
 
-        const response = await fetch("/todos", {
+        const response = await fetch("/api/todos", {
 
             method: "POST",
 
@@ -255,7 +255,7 @@ function createTodoElement(todo) {
 
         try {
 
-            const response = await fetch(`/todos/${todo._id}`, {
+            const response = await fetch(`/api/todos/${todo._id}`, {
 
                 method: "PUT",
 
@@ -298,7 +298,7 @@ function createTodoElement(todo) {
 
         try {
 
-            const response = await fetch(`/todos/${todo._id}`, {
+            const response = await fetch(`/api/todos/${todo._id}`, {
 
                 method: "DELETE"
 
@@ -346,7 +346,7 @@ function createTodoElement(todo) {
         }
         try {
 
-            const response = await fetch(`/todos/${todo._id}`, {
+            const response = await fetch(`/api/todos/${todo._id}`, {
 
                 method: "PUT",
 
