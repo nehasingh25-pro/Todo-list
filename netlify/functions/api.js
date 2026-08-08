@@ -7,6 +7,12 @@ const serverless = require("serverless-http");
 const Todo = require("../../models/Todo");
 
 const app = express();
+app.use((req, res, next) => {
+    if (req.url.startsWith("/api")) {
+        req.url = req.url.substring(4) || "/";
+    }
+    next();
+});
 
 app.get("/", (req, res) => {
     res.json({ message: "API is working" });
