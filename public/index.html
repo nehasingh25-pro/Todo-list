@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Todo Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">✓</div>
+                <h2>My Todo</h2>
+            </div>
+
+
+            <nav>
+
+                <button class="nav-item active">
+                    📋
+                    <span>All Tasks</span>
+                </button>
+
+                <button class="nav-item">
+                    ⏳
+                    <span>Active</span>
+                </button>
+
+                <button class="nav-item">
+                    ✅
+                    <span>Completed</span>
+                </button>
+
+            </nav>
+
+
+            <div class="categories">
+
+                <p> CATEGORIES </p>
+
+                <button class="nav-item">
+                    📚
+                    <span>Study</span>
+                </button>
+
+                <button class="nav-item">
+                    💻
+                    <span>Coding</span>
+                </button>
+
+                <button class="nav-item">
+                    🏠
+                    <span>Personal</span>
+                </button>
+
+            </div>
+
+
+
+            <div class="profile">
+
+                <div class="avatar">
+                    N
+                </div>
+
+                <div>
+                    <strong>Student</strong>
+                    <small>Todo Dashboard</small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main">
+
+
+            <header class="header">
+
+                <div>
+
+                    <h1>My Todo List</h1>
+
+                    <p>
+                        Plan your tasks and track your daily progress
+                    </p>
+
+                </div>
+
+
+                <button class="add-btn">
+                    + Add Todo
+                </button>
+
+            </header>
+
+
+            <section class="stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <p>Total Tasks</p>
+
+                        <h2>0</h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <p>Pending</p>
+
+                        <h2>0</h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <p>Completed</p>
+
+                        <h2>0</h2>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section class="todo-box">
+                <div class="todo-header">
+                     <div>
+
+                        <h2>Your Tasks</h2>
+
+                        <p>
+                            All your tasks in one place
+                        </p>
+
+                    </div>
+
+
+                    <input
+                        type="text"
+                        placeholder="Search tasks..."
+                        class="search"
+                    >
+
+                </div>
+
+                <div class="table-header">
+
+                    <span>Task</span>
+
+                    <span>Category</span>
+
+                    <span>Status</span>
+
+                    <span>Date</span>
+
+                    <span>Actions</span>
+
+                </div>
+
+
+                <div class="todo-row">
+
+                    <div class="task">
+
+                        <input
+                            type="checkbox"
+                        >
+
+                        <span>
+                            Learn JavaScript
+                        </span>
+
+                    </div>
+
+
+                    <span class="category">
+                        Coding
+                    </span>
+
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+
+                    <span class="date">
+                        Aug 8, 2026
+                    </span>
+
+
+                    <div class="actions">
+
+                        <button>
+                            ✏️
+                        </button>
+
+                        <button>
+                            🗑️
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="todo-row">
+
+                    <div class="task">
+
+                        <input
+                            type="checkbox"
+                        >
+
+                        <span>
+                            Practice LeetCode
+                        </span>
+
+                    </div>
+
+
+                    <span class="category">
+                        Coding
+                    </span>
+
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+
+                    <span class="date">
+                        Aug 8, 2026
+                    </span>
+
+
+                    <div class="actions">
+
+                        <button>
+                            ✏️
+                        </button>
+
+                        <button>
+                            🗑️
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="todo-row">
+
+                    <div class="task">
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                        <span class="completed-task">
+                            Learn MongoDB
+                        </span>
+
+                    </div>
+
+
+                    <span class="category">
+                        Study
+                    </span>
+
+
+                    <span class="status completed">
+                        Completed
+                    </span>
+
+
+                    <span class="date">
+                        Aug 7, 2026
+                    </span>
+
+
+                    <div class="actions">
+
+                        <button>
+                            ✏️
+                        </button>
+
+                        <button>
+                            🗑️
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+    </div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
