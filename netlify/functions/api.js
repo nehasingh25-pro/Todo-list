@@ -269,6 +269,8 @@ app.delete("/todos/:id", async (req, res) => {
 
 
 // Netlify Function
-
+app.get("/", (req, res) => {
+    res.json({ message: "API is working" });
+});
 exports.handler = serverless(app);
 
