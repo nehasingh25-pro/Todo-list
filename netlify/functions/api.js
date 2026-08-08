@@ -267,5 +267,5 @@ app.delete("/todos/:id", async (req, res) => {
 
 // Netlify Function
 
-module.exports = serverless(app);
+exports.handler = serverless(app);
 
